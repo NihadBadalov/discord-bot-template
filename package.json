@@ -1,0 +1,20 @@
+{
+  "name": "discord-bot-template",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun . | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss' -c",
+    "register_slash": "bun src/scripts/register_slash_commands.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "pino": "next",
+    "pino-pretty": "^10.3.1"
+  }
+}
